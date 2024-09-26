@@ -6,17 +6,17 @@ public class PemilihanBilangan13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         
-        System.out.print("Masukan sebuah angka: ");
-        int angka = sc.nextInt();
+        System.out.print("Masukan nilai kuis: ");
+        int nilai = sc.nextInt();
 
-        if (angka % 2 == 0)
+        if (nilai < 75 )
         {
-            System.out.println("Angka " + angka + " termasuk bilangan genap");
+            System.out.println("Nilai " + nilai + " Mengikuti remidi");
 
         }
         else
         {
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
+            System.out.println("Nilai " + nilai + " Tidak mengikuti remidi");
         }
     }
 }
