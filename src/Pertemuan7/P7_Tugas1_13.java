@@ -21,15 +21,15 @@ public class P7_Tugas1_13 {
             
             if (jmlTiket > 4) {
                 diskon =  0.1;
-                totalHarga = hargaTiket - (hargaTiket * diskon);
+                totalHarga = (hargaTiket * jmlTiket) - (hargaTiket * diskon);
                 System.out.println("Total harga yang harus di bayar: " + totalHarga); 
             } else if (jmlTiket > 10) {
                 diskon = 0.15;
-                totalHarga = hargaTiket - (hargaTiket * diskon);
+                totalHarga = (hargaTiket * jmlTiket) - (hargaTiket * diskon);
                 System.out.println("Total harga yang harus di bayar: " + totalHarga); 
             } else {
                 diskon = 0;
-                totalHarga = hargaTiket;
+                totalHarga = hargaTiket * jmlTiket;
                 System.out.println("Total harga yang harus di bayar: " + totalHarga); 
             } 
             sc.nextLine();
