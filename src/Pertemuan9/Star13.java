@@ -9,7 +9,7 @@ public class Star13 {
         System.out.print("Masukan niali N = ");
 
         int N = sc.nextInt();
-        for (int i=1; i > N; i++){
+        for (int i=1; i <= N; i--){
             System.out.println("*");
         }
     }
