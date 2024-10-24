@@ -7,9 +7,9 @@ public class Star13 {
         Scanner sc = new Scanner (System.in);
 
         System.out.print("Masukan niali N = ");
-        int N = sc.nextInt();
 
-        for (int i=0; i<=N; i--){
+        int N = sc.nextInt();
+        for (int i=0; i<=N; i++){
             System.out.println("*");
         }
     }
