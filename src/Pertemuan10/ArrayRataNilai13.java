@@ -8,24 +8,25 @@ public class ArrayRataNilai13 {
 
         int [] nilaiMhs = new int [10];
         double total = 0;
-        double rata2;
-        int jumlahLulus = 0;
-        int totalNilai = 0;
+        double rata2Lulus, rata2TidakLulus;
+        int jmlLulus = 0, jmlTidakLulus = 0, totalNilai = 0, jmlMhs, totalLulus = 0, totalTidakLulus = 0;
+        System.out.print("Masukan jumlah mahasiswa: ");
+        jmlMhs = sc.nextInt();
 
-        for (int i = 0; i < nilaiMhs.length; i++) {
+        for (int i = 0; i < jmlMhs; i++) {
             System.out.print("Masukan nilai mahasiswa ke-" + (i+1) + " : ");
             nilaiMhs [i] = sc.nextInt();
             if (nilaiMhs [i] >= 70) {
-                jumlahLulus++;
+                jmlLulus++;
+                totalLulus += nilaiMhs [i];
+            } else {
+                jmlTidakLulus ++;
+                totalTidakLulus += nilaiMhs [i];
             }
         }
-        for (int i = 0; i < nilaiMhs.length; i++){
-            total += nilaiMhs[i];
-        } 
-        
-    
-        rata2 = total/nilaiMhs.length;
-        System.out.println("Rata-rata nilai = " +rata2);
-        System.out.println("Jumlah mahasiswa yang lulus: " + jumlahLulus);
-    }
+        rata2Lulus = totalLulus / jmlLulus;
+        rata2TidakLulus = totalTidakLulus/ jmlTidakLulus;
+        System.out.println("Rata-rata nilai mahasiswa lulus = " + rata2Lulus);
+        System.out.println("Rata-rata nilai mahasiswa tidak lulus = " + rata2TidakLulus);
+    }  
 }
