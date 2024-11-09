@@ -42,18 +42,27 @@ public class BioskopWithScanner13 {
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data penonton disimpan.");
                     }
-                    
-    
-                System.out.print("Input penonton lainnya? (y/n) : ");
-                next = sc.nextLine();
+                    System.out.print("Input penonton lainnya? (y/n) : ");
+                    next = sc.nextLine();
 
                 } while (next.equalsIgnoreCase("y")) ; 
             
             } else if (pilihanMenu == 2) {
                 System.out.println("Daftar Penonton: ");
                 for (int i = 0; i < penonton.length; i++) {
-                    System.out.print("Penonton baris ke-" + (i + 1) + ": " + String.join(", ",penonton[i]));
-                }   
+                    System.out.print("Penonton baris ke-" + (i + 1) + ": ");
+                    for (int j = 0; j < penonton[i].length; j++) {
+                        if (penonton[i][j] == null) {
+                            System.out.print("***");
+                        } else {
+                            System.out.print(penonton[i][j]);
+                        }
+                        if (j < penonton[i].length-1){
+                            System.out.print(", ");
+                        }
+                    }
+                    System.out.println();
+                } 
             
             }else if (pilihanMenu == 3){
                 System.out.println("Anda telah keluar dari program");
