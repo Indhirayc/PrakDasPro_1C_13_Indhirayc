@@ -37,7 +37,7 @@ public class BioskopWithScanner13 {
                     if (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
                         System.out.println("Baris dan kolom tidak valid.");
                     } else if (penonton[baris - 1][kolom - 1] != null) {
-                        System.out.println("Tempat sudah diisi. Input kembali");
+                        System.out.println("Kursi pada baris " + baris + " Kolom " + kolom + " sudah terisi. Pilih kursi lain");
                     } else {
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data penonton disimpan.");
