@@ -6,8 +6,8 @@ public class Tugas1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         
-        int jumlahResponden = 2;
-        int jumlahPertanyaan = 2;
+        int jumlahResponden = 10;
+        int jumlahPertanyaan = 6;
         int [][] hasilSurvey = new int[jumlahResponden][jumlahPertanyaan];
 
         System.out.println("========== Input Jawaban Survei ========== ");
